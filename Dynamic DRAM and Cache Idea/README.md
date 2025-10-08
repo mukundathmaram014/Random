@@ -6,6 +6,10 @@ I first used a regular cache and dram, and visualized and calculated the miss ra
 
 
 
+https://github.com/user-attachments/assets/7754b384-5e5d-4502-9fff-1f16507f9c1d
+
+
+
 Link to slideshow if you want to manually go through frames : [Link](https://link.excalidraw.com/p/readonly/oZOqtFrUrBwepl1FeALm).
 
 
@@ -14,6 +18,12 @@ With the regular dram for this instruction set. We see that the Miss Rate is 5/6
 
 
 Now lets add the dynamic dram functionality. It basically functions the same, except the dram dynamically reorganizes itself by the access count of its addresses (more frequent addresses at the top). Aditionally, to make sure we can still use the same address locations when we want to access data, I added a virtual-to-physical mapping table that keeps track of the swaps. The same instruction set with the dynamic dram and mapping table is shown below.
+
+
+
+https://github.com/user-attachments/assets/dc94ba37-3f4f-4823-8605-c301e89a84b8
+
+
 
 
 Link to slideshow if you want to manually go through frames : [Link](https://link.excalidraw.com/p/readonly/gLZKlq4l82Gbpm2TbiHr).
