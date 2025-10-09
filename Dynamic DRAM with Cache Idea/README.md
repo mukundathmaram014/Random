@@ -50,3 +50,7 @@ With the dynamic DRAM implementation, the same instruction set now yields a miss
 The Dynamic DRAM represents a 1.25× improvement in cache performance compared to the regular DRAM design. 
 
 However, this result is based on a small instruction set of only six instructions. I’m currently working on implementing this design in Verilog and integrating it with my RISC-V microprocessor to evaluate whether the improvement in cache performance holds for larger and more complex instruction sets. I will post updates as I work on this in the [RISC-V-Microprocessor Repository](https://github.com/mukundathmaram014/RISC_V_Microprocessor).
+
+As to actually implementing this in hardware, physically swapping addresses within DRAM is highly impractical due to the way DRAM is structured. However, a feasible workaround lies in recognizing that we only swap addresses to reorganize blocks, which are typically defined as {addr, addr + 4}. With additional control logic, this relationship can be generalized. In that instead of physically swapping, we can redefine blocks as {addr, addr + x}, where x is dynamically chosen to represent the next most frequently accessed address.
+
+That said, maintaining an accurate access count for every DRAM address quickly becomes expensive as system scale increases, so further optimization approaches are still required to make this strategy efficient in practice.
