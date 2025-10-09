@@ -1,5 +1,5 @@
 ## Table of Contents
-- [Dynamic DRAM with Cache Idea Overview](#idea-overview)
+- [Dynamic DRAM with Cache Idea Overview](#dynamic-dram-with-cache-idea-overview)
 - [Regular DRAM + Cache simulation](#regular-dram--cache-simulation)
 - [Dynamic DRAM + Cache simulation](#dynamic-dram--cache-simulation)
 - [Comparison of The two](#comparison-of-the-two)
