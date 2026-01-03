@@ -1,4 +1,3 @@
-# Diagrams
 
 
 ## 1. Dynamic DRAM and Cache Idea
